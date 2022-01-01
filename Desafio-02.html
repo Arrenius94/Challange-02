@@ -1,0 +1,95 @@
+<!-- REQUISITOS DO DESAFIO!
+[x] Retirar todas as tags <br> e manter o layout sem alterações visuais
+[x] Tirar o fieldset e manter o layout sem alterações visuais
+    
+    - Ao passar o mouse sobre os botões de Limpar e Enviar Dados:
+[x] Trocar a cor do fundo
+[x] Aumentar o botão
+[x] Trocar a cor da letra
+[x] Trocar a cor da borda
+[x] O cursor téra que ser o da "mãozinha" 
+
+[x] Alterar cores da borda de todos os inputs
+[x] Alterar a fonte do projeto para 'Nunito'
+[x] Alterar o background do formúlario
+[x] Alterar a cor e tamanho dos textos dos labels
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style2.css">
+  <title> Desafio 2 - HTML t</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <h2 class="title">Cadastro</h2> 
+
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            <label> Nome 
+                <input  type="text" name="name" required>  
+            </label>
+
+            <label> Email 
+                <input type="email" name="email" required>  
+            </label>
+
+            <label> Idade 
+                <input type="number" name="age" required min="12" step="1" style="width: 60px;">  
+            </label>
+
+            <label> Data de Nascimento 
+                <input type="date" name="birth date" required>  
+            </label>            
+
+            <label> Onde você possui conta:
+               <div class="div">  
+                <input class="line" type="checkbox" name="instagram"> Instagram
+                <input class="line" type="checkbox" name="facebook"> Facebook
+                <input class="line" type="checkbox" name="youtube"> Youtube
+               </div> 
+            </label>  
+
+            <label> Sexo: 
+               <div class="div">
+                    <input class="line" type="radio" name="genre" value="masculino"> Masculino 
+                    <input class="line" type="radio" name="genre" value="feminino">  Feminino
+               </div> 
+            </label>  
+            
+            <label> Cor dos olhos:
+                <input type="color" name="eye-color" value="#000000">
+            </label>  
+
+            <label> Biografia </label>
+                <textarea class="bio"></textarea>
+
+            <label class="line"> Foto de perfil:
+                <input class="line" type="file" name="arquivo" accept="imagens/*">  
+            </label>  
+
+            <label> Telefone 
+                <input type="tel" name="telephone">
+            </label>  
+
+            <label> Link do perfil do facebook: 
+                <input type="url" name="link">
+            </label>  
+
+            <label> Senha 
+                <input type="password" name="password" required>
+            </label>  
+
+            <button class="button" type="reset" name="reset"> Limpar </button>
+            <button class="button" type="submit" name="submit"> Enviar </button>
+        </form>
+    </div>    
+</body>
+</html>
